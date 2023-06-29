@@ -45,7 +45,7 @@ In recent years, the imperative to address climate change has necessitated inten
 
 This study focuses on the Sinú-San Jacinto basin and aims to employ geospatial analysis techniques to select a suitable exploration zone for underground CO2 storage. Three key factors will be considered for informed decision-making: proximity to major CO2-emitting cities, the presence of mud volcanoes, and data availability encompassing well data, 2D seismic lines, and 3D seismic data.
 
-Proximity to major CO2-emitting cities within the Sinú-San Jacinto basin constitutes the first factor for evaluation. Selecting a storage zone in close proximity to these urban areas minimizes costs and complexities associated with CO2 transport. Additionally, such proximity presents a more effective solution for reducing carbon footprints in these specific regions.
+Proximity to major CO2-emitting cities within the Sinú-San Jacinto basin constitutes the first factor for evaluation. Selecting a storage zone in close proximity to these urban areas minimizes costs and complexities associated with CO2 transport. Additionally, such proximity presents a more effective solution for reducing carbon footprints in these specific regions\cite{Ajayi2019}.
 
 The presence of mud volcanoes in the Sinú-San Jacinto basin constitutes the second significant factor. These volcanoes, characterized by the emission of natural gases and hot mud, provide indicators of geological activity and subsurface structural variations. Evaluating their presence enhances our understanding of stability and CO2 retention capacities within the selected zone.
 
@@ -58,134 +58,39 @@ Ultimately, this project aims to provide evidence-based recommendations for stak
 
 \section{Metodology}
 
-Next we see a few subsections.
-
-\subsection{Review Stage}
-
-For submission guidelines, follow instructions on paper submission
-system as well as the event website.
-
-Note that conferences impose strict page limits, so it will be better
-for you to prepare your initial submission in the camera ready layout
-so that you will have a good estimate for the paper
-length. Additionally, the effort required for final submission will be
-minimal.
-
-\subsection{Equations}
-
-Some words might be appropriate describing equation~(\ref{eq:sample}), if 
-we had but time and space enough. 
-
-\begin{equation} \label{eq:sample}
-{{\partial F}\over {\partial t}} = D{{\partial^2 F}\over {\partial x^2}}.
-\end{equation}
-
-See \cite{Abl:56}, \cite{AbTaRu:54}, \cite{Keo:58} and \cite{Pow:85}.
-
-\subsubsection{Example.} This equation goes far beyond the
-celebrated theorem ascribed to the great Pythagoras by his followers.
-
-\begin{thm}   % use the thm environment for theorems
-The square of the length of the hypotenuse of a right triangle equals
-the sum of the squares of the lengths of the other two sides.
-\end{thm}
-
-\begin{pf}    % and the pf environment for proofs
-The square of the length of the hypotenuse of a right triangle equals the sum of the squares 
-of the lengths of the other two sides.
-\end{pf}
-
-%% There are a number of predefined theorem-like environments in
-%% ifacconf.cls:
-%%
-%% \begin{thm} ... \end{thm}            % Theorem
-%% \begin{lem} ... \end{lem}            % Lemma
-%% \begin{claim} ... \end{claim}        % Claim
-%% \begin{conj} ... \end{conj}          % Conjecture
-%% \begin{cor} ... \end{cor}            % Corollary
-%% \begin{fact} ... \end{fact}          % Fact
-%% \begin{hypo} ... \end{hypo}          % Hypothesis
-%% \begin{prop} ... \end{prop}          % Proposition
-%% \begin{crit} ... \end{crit}          % Criterion
-
-Of course LaTeX manages equations through built-in macros. You may
-wish to use the \texttt{amstex} package for enhanced math
-capabilities.
-
-\subsection{Figures}
-
-To insert figures, use the \texttt{graphicx} package. Although other
-graphics packages can also be used, \texttt{graphicx} is simpler to
-use. See  Fig.~\ref{fig:bifurcation} for an example.
-
-\begin{figure}
-\begin{center}
-\includegraphics[width=8.4cm]{bifurcation}    % The printed column width is 8.4 cm.
-\caption{Bifurcation: Plot of local maxima of $x$ with damping $a$ decreasing} 
-\label{fig:bifurcation}
-\end{center}
-\end{figure}
-
-Figures must be centered, and have a caption at the bottom. 
-
-\subsection{Tables}
-Tables must be centered and have a caption above them, numbered with
-Arabic numerals. See table~\ref{tb:margins} for an example.
-
-\begin{table}[hb]
-\begin{center}
-\caption{Margin settings}\label{tb:margins}
-\begin{tabular}{cccc}
-Page & Top & Bottom & Left/Right \\\hline
-First & 3.5 & 2.5 & 1.5 \\
-Rest & 2.5 & 2.5 & 1.5 \\ \hline
-\end{tabular}
-\end{center}
-\end{table}
-
-\subsection{Final Stage}
-
-Authors are expected to mind the margins diligently.  Papers need to
-be stamped with event data and paginated for inclusion in the
-proceedings. If your manuscript bleeds into margins, you will be
-required to resubmit and delay the proceedings preparation in the
-process.
-
-\subsubsection{Page margins.} See table~\ref{tb:margins} for the
-page margins specification. All dimensions are in \emph{centimeters}.
 
 
-\subsection{PDF Creation}
+\subsection{Data}
 
-All fonts must be embedded/subsetted in the PDF file. Use one of the
-following tools to produce a good quality PDF file:
+In this study, data on CO2 emissions in thousands of metric tons were used, collected by IDEAM. The data considered were taken from the years 1990, 1994, 2000, and 2004 from various sources, including environmental studies conducted by IDEAM, reports submitted to DANE by entities such as the Unidad de Planeación Minero Energética Unit and Ecopetrol, among others, as well as direct estimations and reports provided by some monitoring stations.
 
-\subsubsection{PDFLaTeX} is a special version of LaTeX by Han The
-Thanh which produces PDF output directly using Type-1 fonts instead of
-the standard \texttt{dvi} file. It accepts figures in JPEG, PNG, and PDF
-formats, but not PostScript. Encapsulated PostScript figures can be
-converted to PDF with the \texttt{epstopdf} tool or with Adobe Acrobat
-Distiller.
+The records were obtained using the methodology revised in 1996 by the Intergovernmental Panel on Climate Change (IPCC). This methodology corresponds to an indirect estimation of emissions from different sectors, based on emission factors per unit of consumption or production. The following expression is used to obtain such estimation:
 
-\subsubsection{Generating PDF from PostScript} is the classical way of
-producing PDF files from LaTeX. The steps are:
+Ecuación
 
-\begin{enumerate}
-  \item Produce a \texttt{dvi} file by running \texttt{latex} twice.
-  \item Produce a PostScript (\texttt{ps}) file with \texttt{dvips}.
-  \item Produce a PDF file with \texttt{ps2pdf} or Adobe Acrobat
-  Distiller.
-\end{enumerate}
+Where:
+TE: Total CO2 emissions in the country
+A: Activity data of the process in the sector
+EF: Emission factor associated with CO2 per unit of activity in the sector
 
-\subsection{Copyright Form}
+In addition to these data, geological information from the Servicio Geologico de Colombia, geographic information from Google Earth Engine, and the data directory from the Agencia Nacional de Hidrocarburos were also utilized in this study.
 
-IFAC will put in place an electronic copyright transfer system in due
-course. Please \emph{do not} send copyright forms by mail or fax. More
-information on this will be made available on IFAC website.
+\subsection{Models}
 
+\subsubsection{Object-based model}
+ In the object perspective, the world is viewed as a collection of spatially located entities. These entities are typically tangible and exist in reality. An object, on the other hand, is a digital representation that captures all or a portion of an entity. Objects are described meticulously, including their boundary lines and other interconnected objects that constitute or are associated with them.
+\subsubsection{Field model}
+the world is perceived as a dynamic system characterized by properties that exhibit continuous variations across spatial dimensions. This perspective focuses on data that are inherently subject to continuous changes in either two-dimensional or three-dimensional space. In a field, each specific location possesses a value, which can include concepts such as "not here" or zero, and the collective set of values defines the overall field.
+
+
+\subsection{Data processing}
+
+After conducting several tests in various development environments, it was determined that data processing would be handled using the Google Colab platform, a cloud-based development environment provided by Google. It operates within the framework of Jupyter Notebook and enables users to execute Python code.
+
+During the processing of the data of interest using Python code, multiple Google Colab notebooks were utilized due to interference between certain versions of Numpy and the required libraries for executing different models.
 
 \section{Results}
-
+\subsection{Función Rey..}
 Use SI as primary units. Other units may be used as secondary units
 (in parentheses). This applies to papers in data storage. For example,
 write ``$15\,\mathrm{Gb}/\mathrm{cm}^2$ ($100\,\mathrm{Gb}/\mathrm{in}^2$)''. 
@@ -217,6 +122,62 @@ Multipliers can be especially confusing. Write ``Magnetization
 ($\mathrm{kA}/\mathrm{m}$)'' or ``Magnetization ($10^3 \mathrm{A}/\mathrm{m}$)''. Do not write
 ``Magnetization $(\mathrm{A}/\mathrm{m}) \times 1000$'' because the reader would not know
 whether the axis label means $16000\,\mathrm{A}/\mathrm{m}$ or $0.016\,\mathrm{A}/\mathrm{m}$.
+
+\begin{figure}
+	\centering
+	\includegraphics[width=1\linewidth]{"img/Kernel Desnsity de Volcanes de lodo"}
+	\caption[KDvolcanes]{Mapa de analisis de Kernel}
+	\label{fig:kernel-desnsity-de-volcanes-de-lodo}
+\end{figure}
+\begin{figure}
+	\centering
+	\includegraphics[width=0.7\linewidth]{img/Kernel_Desnsity_Pozos}
+	\caption[KDpozos]{}
+	\label{fig:kerneldesnsitypozos}
+\end{figure}
+\begin{figure}
+	\centering
+	\includegraphics[width=0.7\linewidth]{img/Lineas2D_kde}
+	\caption[KDlineas2d]{}
+	\label{fig:lineas2dkde}
+\end{figure}
+\begin{figure}
+	\centering
+	\includegraphics[width=0.7\linewidth]{"img/Mapa cubo sismico"}
+	\caption[mapa3dsismica]{}
+	\label{fig:mapa-cubo-sismico}
+\end{figure}
+\begin{figure}
+	\centering
+	\includegraphics[width=0.7\linewidth]{"img/mapa de emiciones"}
+	\caption[mapaemisiones]{}
+	\label{fig:mapa-de-emiciones}
+\end{figure}
+\begin{figure}
+	\centering
+	\includegraphics[width=0.7\linewidth]{"img/Mapa de Pozos"}
+	\caption[mapapozos]{}
+	\label{fig:mapa-de-pozos}
+\end{figure}
+\begin{figure}
+	\centering
+	\includegraphics[width=0.7\linewidth]{"img/Mapa de sismica 2D"}
+	\caption[mapasismica2d]{}
+	\label{fig:mapa-de-sismica-2d}
+\end{figure}
+\begin{figure}
+	\centering
+	\includegraphics[width=0.7\linewidth]{"img/Sin título"}
+	\caption[centroidesemisiones]{}
+	\label{fig:sin-titulo}
+\end{figure}
+\begin{figure}
+	\centering
+	\includegraphics[width=0.7\linewidth]{img/Volcanes}
+	\caption[volcanes]{}
+	\label{fig:volcanes}
+\end{figure}
+
 
 \subsection{References}
 
